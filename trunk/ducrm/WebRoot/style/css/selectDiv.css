@@ -1,0 +1,10 @@
+#kt_lstItems span
+{border:1px solid #FFCF88;background-color:#FFFAE8;padding:5px 8px 5px 8px;margin:3px;display:inline-block;}
+
+#kt_lstItems a:hover
+{color:red;background-color:grey;margin:0px 3px 0px 5px;text-decoration:none;text-align:center;font-size:x-small;}
+
+#kt_lstItems a,
+#kt_lstItems a:link,
+#kt_lstItems a:visited 
+{color:blue;margin:0px 3px 0px 5px;text-decoration:none;text-align:center;font-size:x-small;}

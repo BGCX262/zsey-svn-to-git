@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Image Upload</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<script>
+		var error_missing_upload_url = "%u9519%u8BEF%uFF1A%u5FC5%u987B%u6307%u5B9A%u56FE%u7247%u4E0A%u4F20%u7684URL%u5730%u5740%uFF01";
+		var error_firefox_notsupported = "%u9519%u8BEF%uFF1A%u56FE%u7247%u4E0A%u4F20%u63D2%u4EF6%u4E0D%u652F%u6301Firefox%u6D4F%u89C8%u5668%uFF01";
+		var error_missing_file = "%u8BF7%u9009%u62E9%u8981%u4E0A%u4F20%u7684%u56FE%u7247%u6587%u4EF6%uFF01";
+		var tip_uploading = "%u6B63%u5728%u4E0A%u4F20%u56FE%u7247%uFF0C%u8BF7%u7A0D%u540E...";
+		var fileInputName = "ktImage";
+		window.onload = function() {
+			var form = document.getElementById("upload_form");
+			var cfg = parent.kt_image_config;
+			if (!cfg.uploadURL || cfg.uploadURL == "") {
+				parent.ktImageParent.tip(true, "<B><font style='color:red;'>" + unescape(error_missing_upload_url)
+						+ "</font></B>");
+			} else {
+				form.action = cfg.uploadURL;
+			}
+			if (cfg.fileName && cfg.fileName != "") {
+				form[fileInputName].name = cfg.fileName;
+				fileInputName = cfg.fileName;
+			}
+			parent.ktImageParent.setFile("");
+			if (window.navigator.userAgent.indexOf("Firefox") >= 0) {
+				parent.ktImageParent.tip(true, "<B><font style='color:red;'>" + unescape(error_firefox_notsupported)
+						+ "</font></B>");
+			}
+		}
+		
+		function check(form) {
+			if (!form.action) {
+				alert(unescape(error_missing_upload_url));
+				return false;
+			}
+			if (form["ktImage"].value == "") {
+				alert(unescape(error_missing_file));
+				return false;
+			}
+			parent.ktImageParent.tip(true, "<B><font style='color:red;'>" + unescape(tip_uploading) + "</font></B>");
+			return true;
+		}
+
+		function setValue(file) {
+			parent.ktImageParent.setFile(file);
+		}
+	</script>
+</head>
+<body>
+<div>
+	<form method="POST" id="upload_form" onsubmit="return check(this);" enctype="multipart/form-data">
+		<input type="file" name="ktImage" id="ktImage" onchange="setValue(this.value)" /> <input id="kt_submit" type="submit" value="上传" />
+	</form>
+</div>
+</body>
+</html>

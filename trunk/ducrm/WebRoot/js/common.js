@@ -1,0 +1,82 @@
+$(document).ready(function(){
+	$("td :radio").addClass("radio");
+	$("td :radio").parent("span").css({margin: "0 4px"});
+	$(".nm_table tr:odd, .nt_table tr:odd").addClass("hoverBg"); //单行背景颜色
+	$(".fxlcBoxNav li:last").addClass("last");
+	//鼠标经过
+	$(".nm_table tr, .nt_table tr").hover(
+		function(){
+			$(this).addClass("over");
+		},
+		function(){
+			$(this).removeClass("over");
+	});
+	$(".btn").hover( 
+		function(){
+			$(this).addClass("btnOver");
+		},
+		function(){
+			$(this).removeClass("btnOver");
+	});
+	$(".editBtn").hover(
+		function(){
+			$(this).addClass("editBtnOver");
+		},
+		function(){
+			$(this).removeClass("editBtnOver");
+	});
+	$(".navBtn").hover(
+		function(){
+			$(this).addClass("navBtnOver");
+		},
+		function(){
+			$(this).removeClass("navBtnOver");
+	});
+	$(".pageBtn").hover(
+		function(){
+			$(this).addClass("pageBtnOver");
+		},
+		function(){
+			$(this).removeClass("pageBtnOver");
+	});
+	$(".formBtn01").hover(
+		function(){
+			$(this).addClass("formBtnOver01");
+		},
+		function(){
+			$(this).removeClass("formBtnOver01");
+	});
+	$(".formBtn02").hover(
+		function(){
+			$(this).addClass("formBtnOver02");
+		},
+		function(){
+			$(this).removeClass("formBtnOver02");
+	});
+	//鼠标得到焦点
+	$(".input").focus(
+		function(){
+			$(this).addClass("inputOver");
+	});
+	$(".pageInput").focus(
+		function(){
+			$(this).addClass("pageInputOver");
+	});
+	$(".ntext_02").focus(
+		function(){
+			$(this).addClass("ntextOver_02");
+	});
+	//鼠标失去焦点
+	$(".input").blur(
+		function(){
+			$(this).removeClass("inputOver");
+	});
+	$(".pageInput").blur(
+		function(){
+			$(this).removeClass("pageInputOver");
+	});
+	$(".ntext_02").blur(
+		function(){
+			$(this).removeClass("ntextOver_02");
+	});
+});

@@ -1,0 +1,102 @@
+@import url("cssreset.css");
+@import url("nform.css");
+body { }
+.imgbox { padding: 2px; border: 1px solid #DDD; }
+.iso_text_01 { border: 1px solid #255885; background-image: url(../images/btn_bg.png); background-repeat: repeat-x; background-position: left top; line-height: 26px; height: 26px; }
+.iso_text_02 { border: 1px solid #315767; background-color: #FFF; padding: 2px; width: 190px; }
+.iso_text_03 { background-color: #F9F9F9; padding:2px; width: 96%; background-image: url(../images/linebg.png); background-repeat: repeat-x; background-position: left top; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: #7c7c7c; border-right-color: #c3c3c3; border-bottom-color: #c3c3c3; border-left-color: #c3c3c3; color: #666; }
+.login_body { background: url(../images/bgLogin.jpg) no-repeat center top;}
+#head_box { background-image: url(../images/head_left.jpg); background-repeat: no-repeat; background-position: left top; width: 740px; height: 144px; }
+/* ------------ 登录 ------------ */
+.login { position: relative; width: 600px; margin: 0px auto 0 auto;}
+/* ------------ 登录框 ------------ */
+.loginBox { position: absolute; width: 300px; top: 300px; left: 280px;}
+.loginBox th { font-size: 14px; font-weight: normal; color: #2c4860; font-weight: bold;}
+.loginBox td { padding: 4px 2px; text-align: left;}
+.loginBox .user { width: 140px; height: 23px; padding: 6px 10px 0px 32px; border: none; background: url(../images/bgLogin.gif) no-repeat 0px 0px;}
+.loginBox .pwd { width: 140px; height: 21px; padding: 8px 10px 0px 32px; border: none; background: url(../images/bgLogin.gif) no-repeat 0px -29px;}
+.loginBox input.btn { position: relative; top: -1px; outline: none;}
+.loginBox .btn { display: inline-block; width: 81px; height: 27px; line-height: 27px; margin: 0px 20px 0 0; color: #fff; background: url(../images/bgLogin.gif) no-repeat 0px bottom; border: none; text-align: center; cursor: pointer; font-weight: bold;}
+.loginFooter { z-index: 2; position: absolute; bottom: 0px; overflow: hidden; width: 100%; height: 33px; line-height: 33px; color: #5f85b4;}
+.loginFooter p { width: 1280px; margin: 0 auto; background: url(../images/bgLoginFooter.gif) repeat-x left top; text-align: center;}
+.footer { background: url(../images/bgLoginFooter.gif) repeat-x right top; height: 30px; line-height: 30px; color: #5f85b4; padding-right: 20px; text-align: right;}
+.text1 { color:#ff7800; padding-right:0px; }
+.foot_pad { padding-right:20px; }
+#head { background: url(../images/headbg.png) repeat-x left top; height: 80px; }
+#topinfo { zoom: 1; overflow: hidden; text-align: right; padding-right: 15px; color: #FFF; padding-top: 0px; height: 51px; }
+#topinfo b { margin-right: 10px; color: #fd6000; }
+#topinfo dd { zoom: 1; float: right; width: 253px; _width: 268px; height: 26px; padding-left: 15px; _padding-left: 0; padding-right: 12px; margin-top: 10px; margin-left: 30px; background: url(../images/bgTopinfo.png) no-repeat right bottom; text-align: left; behavior: url("css/iepngfix.htc");}
+#topinfo p { height: 26px; line-height: 28px; padding: 0 0 0 30px; color: #266891; }
+#topinfo a { margin: 0 5px; color: #266891; }
+#topinfo span a { color: #fd6000; font-weight: bold; padding-left: 7px; }
+#msbar { line-height: 29px; height: 29px; padding-left: 30px; color: #3d4d57; }
+#msbar_user b { color: #fd6000; }
+#head_logo { width:570px; margin-left:20px; }
+#sidebg { background-color: #ebf2f6; }
+#welcome { text-align: center; padding-top: 10%; }
+#swichbg { background-color: #c7d6de; }
+#sidebar_t { height:43px; }
+#sidebar_t h2 { font-size: 18px; color: #333; font-family: "microsoft yahei"; padding-top: 24px; padding-left: 45px; }
+#sidebar_m { background-color:#FFF; }
+#sidebar { width: 200px;}
+/*===========左菜单样式=========*/
+.treeview { overflow: hidden; width: 200px; }
+.treeview, .treeview ul { list-style: none; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+.treeview .hover { cursor: pointer; }
+.treeview li span { display: block; font-size: 12px; font-weight: bold; color: #3d4d57; padding-left: 25px; background-image: url(../images/sidebar_li.png); background-repeat: no-repeat; background-position: left bottom; line-height: 29px; height: 29px; cursor: pointer; }
+.treeview .open span { display: block; font-size: 12px; font-weight: bold; color: #F8F8F8; padding-left: 25px; background-image: url(../images/sidebar_li.png); background-repeat: no-repeat; background-position: left top; line-height: 29px; height: 29px; }
+.treeview li a { display: block; font-size: 14px; font-weight: bold; color: #333; padding-left: 45px; background-image: url(../images/sidebar_li.png); background-repeat: no-repeat; background-position: left top; line-height: 29px; height: 29px; text-shadow: 1px 1px 0px #1d2c3a; }
+.treeview ul li a:hover { text-decoration: none; color: #F90;}
+.tree1 li a { color: #333; }
+.treeview li li span { line-height: 28px; background-image: url(../images/p_1.gif); height: 28px; font-size: 12px; padding-left: 45px; text-shadow: none; color: #333; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #CCC; background-repeat: no-repeat; background-position: 35px center; }
+.treeview .open li span { line-height: 28px; background-image: url(../images/p_1.gif); height: 28px; font-size: 12px; padding-left: 45px; text-shadow: none; color: #333; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #CCC; background-repeat: no-repeat; background-position: 35px center; font-weight: normal;}
+.treeview li span a { font-weight: bold; color: #333; text-decoration: none; display: block; }
+.treeview li a:hover span, .treeview li.curr a span { color: #5e7686}
+.treeview li ul li a { display: block; font-size: 12px; line-height: 28px; font-weight: normal; color: #333; height: 28px; clear: both; padding-left: 0px; text-shadow: none; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ddd; background-image: none; }
+.treeview .open li li span { background: none;}
+/*二级当前状态*/
+.treeview li ul .open span, .treeview li ul .open span a { font-weight: bold;}
+.treeview li ul li ul li a { display: block; font-size: 12px; line-height: 28px; font-weight: normal; color: #5e7686; height: 28px; background-image: url(../images/p_2.gif); padding-left: 10px; background-repeat: no-repeat; background-position: 0px center; text-shadow: none; }
+#tree1 li ul li a:hover, #tree1 li ul li.curr a, #tree1 li ul li.curr span { color: #ff6000; }
+/*三级当前状态*/
+#tree1 li ul li ul li a:hover { color: #F90; font-weight: normal;}
+#tree1 li ul li.curr ul li a { color: #333;}
+#tree1 li ul li.curr ul li span a.curr { color: #F90; font-weight: normal;}
+.iso_title { line-height: 40px; background-image: url(../images/iso_title.png); background-repeat: no-repeat; background-position: left top; height: 40px; font-family: "Microsoft Yahei"; font-size: 18px; color: #333; padding-left: 40px; margin-bottom: 10px; }
+#tip_wrapper { background-color: #ebeff1; background-image: url(../images/tipbg.png); background-repeat: repeat-x; background-position: left top; margin-top: 10px; margin-right: auto; margin-left: auto; padding: 20px; width: 480px; border: 2px solid #d7dee1; -moz-border-radius:10px; -webkit-border-radius:10px; }
+#tip_title { font-size: 24px; font-weight: bold; line-height: 42px; font-family: "Microsoft Yahei"; color: #4998c4; text-shadow: 1px 1px 0px #FFF; }
+#error_title { font-size: 24px; font-weight: bold; line-height: 42px; font-family: "Microsoft Yahei"; color: #F00; text-shadow: 1px 1px 0px #FFF; }
+#tipbox p { color: #666; }
+.tip_control { padding-top: 10px; padding-bottom: 10px; }
+.close { height: 17px; width: 18px; position: absolute; top: 10px; right: 5px; }
+#tan_title h2 { font-size: 18px; font-weight: bold; line-height: 38px; font-family: "Microsoft Yahei"; color: #000; text-shadow: 1px 1px 0px #FFF; padding-left: 5px; }
+#tan_title { background-image: url(../images/tan_tbg.png); background-repeat: repeat-x; background-position: left top; height: 38px; }
+#tan_wrapper { border: 1px solid #d4dbe3; background-color: #FFF; }
+.tan_control { background-image: url(../images/tan_bot.png); background-repeat: repeat-x; background-position: left bottom; text-align: center; padding: 10px; }
+.center { text-align: center; }
+.ck_title h2 { font-size: 14px; font-weight: bold; line-height: 32px; color: #000; text-shadow: 1px 1px 0px #FFF; padding-left: 5px; }
+.ck_title { background-image: url(../images/tan_tbg.png); background-repeat: repeat-x; background-position: left top; height: 32px; position: relative; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #d4dbe3; }
+.ck_wrapper { border: 1px solid #d4dbe3; background-color: #FFF; width: 80%; margin-top: 10px; margin-right: auto; margin-left: auto; }
+.ck_table td { padding: 5px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #F8F8F8; color: #666; }
+.ck_main { padding-top: 10px; padding-bottom: 10px; }
+.ck_table td b { color: #000; }
+/*============20110902add===============*/
+#m_title { background-image: url(../images/tbg.png); background-repeat: repeat-x; background-position: left top; height: 40px; margin-bottom: 10px; }
+#m_title h2 { font-size: 14px; color: #333; padding-left: 15px; font-weight: bold; background-image: url(../images/titlebg.png); background-repeat: no-repeat; background-position: left top; height: 32px; padding-top: 8px; }
+#main_nav { text-align: right; color: #5e7686; margin-right: auto; margin-left: auto; padding-right: 10px; padding-left: 10px; font-family: 宋体; }
+#main_nav .nav_dq { background-image: url(../images/main_nav.png); background-repeat: no-repeat; background-position: left 1px; _background-position: left 0px; padding-left: 22px; padding-top: 2px; padding-bottom: 2px; }
+#main_nav a { color:#5e7686; text-decoration:none; }
+#main_nav a:hover { color: #ff9000; text-decoration: underline; }
+#main_nav .nav_sz { color: #1273df; }
+.side_li { position: relative; cursor: pointer; }
+.side_li li { position: relative; cursor: pointer; }
+.side_icon { height: 16px; width: 16px; position: absolute; left: 20px; top: 2px; }
+
+.tableBox { padding: 10px; color: #333; border: 1px dashed #9d9d9d;margin-top:10px; } 
+.tableBox legend { color: #333; padding: 0 10px; font-weight: 800; background: #fff;} 
+
+.tableBox { padding: 10px; color: #333; border: 1px dashed #9d9d9d; } 
+.tableBox legend { color: #333; padding: 0 10px; font-weight: 800; background: #fff;} 
+
+.tableBox legend strong { display: inline-block; padding-right: 15px; background: url(../images/foldArrow.gif) no-repeat right -2px;}
+.tableBox legend strong.fold { display: inline-block; padding-right: 15px; background: url(../images/foldArrow.gif) no-repeat right -24px;}

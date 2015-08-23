@@ -1,0 +1,35 @@
+/* 
+ * 消息提醒的CSS设置.使用模板如下：
+ * <div class="msg_common msg_info">
+ *     <div class="msg_content">这里是文字内容</div>
+ * </div>
+ */
+.msg_common {
+	border:1px solid #FFCC7F;
+	list-style:none;
+	line-height:18px;
+	margin: 5px auto;
+	width:100%;
+	font-size:12px;
+	overflow-y:auto; /* y方向自动随内容而扩充高度 */
+	word-break:break-all; /* 自动换行避免撑开父容器，对IE有效 */
+}
+
+/* 显示文字内容区域的样式 */
+.msg_content {
+	margin-left:32px;
+	padding:5px;
+	list-style:none;
+}
+
+/* info 图标 */
+.msg_info {
+	background:#FFFFE5 url(info_22x22.png) no-repeat;
+	background-position:5px 5px;
+}
+
+/* error 图标 */
+.msg_error {
+	background:#FFFFE5 url(error_22x22.png) no-repeat;
+	background-position:5px 5px;
+}

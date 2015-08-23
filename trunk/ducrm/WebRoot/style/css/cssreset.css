@@ -1,0 +1,40 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; }
+body, button, input, select, textarea { font-family: arial, Verdana, Geneva, \5b8b\4f53, sans-serif; font-size: 12px; line-height: 1.5em; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: courier new, courier, monospace; }
+small { font-size: 12px; }
+ul, ol { list-style: none; }
+a { text-decoration: none; outline: none;}
+a:hover { text-decoration: underline; }
+a:active { star:expression(this.onFocus=this.blur());}
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+legend { color: #000; }
+fieldset, img { border: 0; }
+button, input, select, textarea { font-size: 100%; }
+table { border-collapse: collapse; border-spacing: 0; }
+.clear { clear:both; }
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+h1, h2, h3, h4, h5, h6 { font-size: 14px; }
+.mT60 { margin-top: 60px; }
+.mT50 { margin-top: 50px; }
+.mT40 { margin-top: 40px; }
+.mT30 { margin-top: 30px; }
+.mT20 { margin-top: 20px; }
+.mT15 { margin-top: 15px; }
+.mT10 { margin-top: 10px; }
+.mT5 { margin-top: 5px; }
+.center { margin-left: auto; margin-right: auto;}
+.tLeft { text-align: left;}
+.tCenter { text-align: center;}
+.tRight { text-align: right;}
+img { behavior: url("css/iepngfix.htc"); }
+input { outline: none;}
+.fLeft { float: left;}
+.fRight { float: right;}
+.clearFloat { overflow: hidden; zoom: 1;}
+.orange { color: #ff6600;}

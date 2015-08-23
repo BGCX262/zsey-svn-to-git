@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+    "http://tuckey.org/res/dtds/urlrewrite3.0.dtd">    
+<!-- 
+   | 配置使用方式请参考如下网址：
+   | http://urlrewritefilter.googlecode.com/svn/trunk/src/doc/manual/3.2/index.html
+   -->
+<urlrewrite use-context="false">
+    <rule>
+        <from>^/*$</from>
+        <to type="forward">/login/index.jhtml</to>
+    </rule>
+</urlrewrite>

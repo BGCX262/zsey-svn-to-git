@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:util="http://www.springframework.org/schema/util" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-3.0.xsd  
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/util  
+		http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+	
+	<!-- 系统流水号 -->
+	<bean id="sysAppSequenceDAO" class="cn.com.kington.dao.SysAppSequenceDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 系统用户 -->
+	<bean id="sysUserDAO" class="cn.com.kington.dao.system.SysUserDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 系统角色 -->
+	<bean id="sysRoleDAO" class="cn.com.kington.dao.system.SysRoleDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 系统功能菜单 -->
+	<bean id="sysMenuDAO" class="cn.com.kington.dao.system.SysMenuDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 系统角色与系统用户的关系 -->
+	<bean id="sysRoleUserDAO" class="cn.com.kington.dao.system.SysRoleUserDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 系统角色与功能菜单的关系 -->
+	<bean id="sysRoleMenuDAO" class="cn.com.kington.dao.system.SysRoleMenuDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 系统数字字典管理 -->
+	<bean id="sysDictDAO" class="cn.com.kington.dao.system.SysDictDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 系统数字字典管理 -->
+	<bean id="sysConfigDAO" class="cn.com.kington.dao.system.SysConfigDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 地区管理 -->
+	<bean id="areaDAO" class="cn.com.kington.dao.basic.AreaDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 部门管理 -->
+	<bean id="departmentDAO" class="cn.com.kington.dao.basic.DepartmentDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 员工管理 -->
+	<bean id="employeeDAO" class="cn.com.kington.dao.basic.EmployeeDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 客户 -->
+	<bean id="customerDAO" class="cn.com.kington.dao.basic.CustomerDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 供应商 -->
+	<bean id="providerDAO" class="cn.com.kington.dao.basic.ProviderDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 联系人 -->
+	<bean id="linkmanDAO" class="cn.com.kington.dao.basic.LinkmanDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 分类管理 -->
+	<bean id="categoryDAO" class="cn.com.kington.dao.basic.CategoryDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 物料 -->
+	<bean id="materialDAO" class="cn.com.kington.dao.basic.MaterialDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 供应商和物料的关系 -->
+	<bean id="providerMaterialDAO" class="cn.com.kington.dao.basic.ProviderMaterialDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 产品管理 -->
+	<bean id="productDAO" class="cn.com.kington.dao.basic.ProductDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 工序管理 -->
+	<bean id="workDAO" class="cn.com.kington.dao.basic.WorkDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 销售项目订单管理 -->
+	<bean id="sellOrderDAO" class="cn.com.kington.dao.sell.SellOrderDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 附件管理 -->
+	<bean id="accessoryDAO" class="cn.com.kington.dao.system.AccessoryDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 销售项目订单明细管理 -->
+	<bean id="sellOrderListDAO" class="cn.com.kington.dao.sell.SellOrderListDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 销售项目订单明细管理 -->
+	<bean id="auditMindDAO" class="cn.com.kington.dao.config.AuditMindDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 采购询价 -->
+	<bean id="buyPriceDAO" class="cn.com.kington.dao.buy.BuyPriceDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 采购询价明细 -->
+	<bean id="buyPriceListDAO" class="cn.com.kington.dao.buy.BuyPriceListDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 物料采购 -->
+	<bean id="buyOrderDAO" class="cn.com.kington.dao.buy.BuyOrderDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 物料采购明细 -->
+	<bean id="buyOrderListDAO" class="cn.com.kington.dao.buy.BuyOrderListDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 产品预算 -->
+	<bean id="orderBudgetDAO" class="cn.com.kington.dao.finance.OrderBudgetDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 仓库管理 -->
+	<bean id="storeDAO" class="cn.com.kington.dao.store.StoreDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 库存管理 -->
+	<bean id="storageDAO" class="cn.com.kington.dao.store.StorageDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 库存管理 -->
+	<bean id="storeRecordDAO" class="cn.com.kington.dao.store.StoreRecordDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 产品报价管理 -->
+	<bean id="productPriceDAO" class="cn.com.kington.dao.sell.ProductPriceDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 产品报价明细管理 -->
+	<bean id="productPriceListDAO" class="cn.com.kington.dao.sell.ProductPriceListDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 产品物料管理 -->
+	<bean id="productMaterialDAO" class="cn.com.kington.dao.produce.ProductMaterialDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 产品物料管理 -->
+	<bean id="productWorkDAO" class="cn.com.kington.dao.produce.ProductWorkDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<!-- 生产报告管理 -->
+	<bean id="workReportDAO" class="cn.com.kington.dao.produce.WorkReportDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+</beans>

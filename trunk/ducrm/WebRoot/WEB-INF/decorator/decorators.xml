@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<decorators defaultdir="/WEB-INF/decorator">
+	<!-- 指定哪些地址是不需要装饰的，通常用来指定部分特定页面 -->
+    <excludes>
+        <pattern>/test/**</pattern>
+        <pattern>/login/**</pattern>
+        <pattern>/error/**</pattern>
+        <pattern>/message/**</pattern>
+        
+        <pattern>/main/index.jhtml*</pattern>
+        <pattern>/main/left.jhtml*</pattern>
+        <pattern>/main/welcome.jhtml*</pattern>
+        
+        <!-- 销售订单打印 -->
+        <pattern>/sell/sell-order/print.jhtml</pattern>
+    </excludes>
+    
+    <!-- 定义一个装饰器，给定的所有url地址都将使用该装饰器进行装饰 -->
+    <decorator name="default" page="default-decorator.jsp">
+        <pattern>*.jhtml</pattern>
+    </decorator>
+</decorators>
